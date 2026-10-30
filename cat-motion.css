@@ -1,0 +1,42 @@
+/* Always-on cat motion, a livelier cat room, and richer solitaire and board surfaces. */
+@keyframes cat-bob{0%,100%{translate:0 0;rotate:-5deg}50%{translate:0 -9px;rotate:3deg}}
+@keyframes cat-wiggle{0%,100%{rotate:-6deg;scale:1}25%{rotate:5deg;scale:1.04}50%{rotate:-3deg;scale:1}75%{rotate:6deg;scale:1.03}}
+@keyframes cat-breathe{0%,100%{scale:1}50%{scale:1.06}}
+@keyframes prop-sway{0%,100%{rotate:-8deg;translate:0 0}50%{rotate:10deg;translate:2px -5px}}
+@keyframes paw-drift{0%,100%{translate:0 0;opacity:.1}50%{translate:-10px 8px;opacity:.16}}
+@keyframes star-twinkle{0%,100%{opacity:.35;scale:.8}50%{opacity:1;scale:1.25}}
+@keyframes sheen{0%{background-position:150% 0}100%{background-position:-150% 0}}
+@keyframes board-glow{0%,100%{box-shadow:0 18px 40px #0007,inset 0 0 0 6px #3a2638,0 0 0 1px #d9a7b540}50%{box-shadow:0 22px 48px #0008,inset 0 0 0 6px #4a3048,0 0 0 1px #f3b7a185,0 0 28px #f3b7a133}}
+
+/* Every cat image moves continuously, with a staggered phase per tile. */
+#box .cat-scene .scene-cat{animation:cat-bob 3.6s ease-in-out infinite;will-change:translate,rotate}
+#box .cat-scene.cat-scene-1 .scene-cat{animation-delay:-1.1s;animation-duration:4.2s}
+#box .cat-scene.cat-scene-2 .scene-cat{animation-delay:-2.3s;animation-duration:3.1s}
+#box .cat-scene.cat-scene-3 .scene-cat{animation-delay:-.6s;animation-duration:3.9s}
+#box .cat-scene .scene-prop{animation:prop-sway 4.8s ease-in-out infinite;transform-origin:50% 80%}
+#box .cat-scene:before{animation:paw-drift 9s ease-in-out infinite}
+#box .cat-scene:after{animation:star-twinkle 2.6s ease-in-out infinite}
+#box .game-symbol{animation:cat-wiggle 3.2s ease-in-out infinite;transform-origin:50% 60%}
+#box .featured-collection .illustrated:first-child .scene-cat{animation-name:cat-bob;animation-duration:4s}
+#box .brand-mark{animation:cat-wiggle 4s ease-in-out infinite}
+.card .b:after{animation:cat-breathe 3.4s ease-in-out infinite}
+#g2.solitaire-deck .deck-court .cat-court{animation:cat-bob 3.8s ease-in-out infinite}
+#g2.solitaire-deck .cat-card-stamp{animation:star-twinkle 3s ease-in-out infinite}
+#g2h:before{display:inline-block;animation:cat-wiggle 3.5s ease-in-out infinite}
+
+/* Richer cat room: a soft aura behind each scene and a sparkle that stays in motion. */
+#box .cat-scene{box-shadow:inset 0 0 0 1px #ffe2c122,inset 0 -30px 50px #1a111f55}
+#box .cat-scene:after{content:'✦';left:14%;top:12%;font-size:22px}
+#box .arcade-tile:hover .scene-cat{animation-play-state:running}
+
+/* Solitaire: a glossy sheen across card backs and crisper card faces. */
+#g2.solitaire-deck .card .b:before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 40%,#fff3e61f 50%,transparent 60%) 0 0/250% 100%;animation:sheen 5.5s linear infinite;z-index:1}
+#g2.solitaire-deck .card .f{box-shadow:0 8px 16px #0a051a66,inset 0 0 0 1px #ffffff80}
+#g2.solitaire-deck .sol-column{filter:drop-shadow(0 4px 6px #0a051a33)}
+
+/* Board games: a glowing lacquered frame around each board. */
+:is(.check-board,.chess-board,.mancala-board,.bg-board,.classic-device){animation:board-glow 5s ease-in-out infinite;border-radius:14px}
+
+@media (prefers-reduced-motion:reduce){
+ #box .cat-scene .scene-cat,#box .cat-scene .scene-prop,#box .cat-scene:before,#box .cat-scene:after,#box .game-symbol,#box .brand-mark,.card .b:after,#g2h:before,#g2.solitaire-deck .deck-court .cat-court,#g2.solitaire-deck .cat-card-stamp,#g2.solitaire-deck .card .b:before{animation:none!important}
+}

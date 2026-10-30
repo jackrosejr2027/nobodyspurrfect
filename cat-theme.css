@@ -1,0 +1,53 @@
+/* One cozy cat room for every cabinet, game, menu and demo. */
+:root,html[data-page-theme]{--room-bg:#201923;--room-panel:#2c2330;--room-raised:#382c3c;--room-line:#4b394e;--room-ink:#fff0e6;--room-muted:#c0aabf;--room-accent:#f3b7a1;--room-soft:#403044;--felt:#35263d;--ink:#1c1621;--gold:#f3b7a1;--cream:#fff0e6;color-scheme:dark}
+body,#g2,#magic,.page{background:radial-gradient(ellipse at 50% 15%,#49314c 0,#2b2231 48%,#1c1722 100%)!important}
+body:before,body:after{display:none!important}
+#top,#g2t,#mtop{background:#211a27ed!important;border-bottom:1px solid #664864!important}
+#top h2{color:#ffe4d5!important}
+#g2h:before{content:'🐱';font-size:.85em;margin-right:9px}
+#box:not(.arcade-box){background:linear-gradient(145deg,#3c2b41,#251e2d)!important;border-color:#ba879c!important;color:#fff0e6}
+button{background:linear-gradient(#f7c8af,#e7a48e);color:#382436;box-shadow:0 2px 0 #aa7282}
+button.alt{background:#382b40;color:#ffeddf;border-color:#78556e;box-shadow:none}
+input,select,textarea{accent-color:#efb29f}
+#box.arcade-box,#box[data-view=paper]{--room-bg:#201923;--room-panel:#2c2330;--room-line:#4b394e;--room-ink:#fff0e6;--room-muted:#c0aabf;--room-accent:#f3b7a1;color-scheme:dark}
+#box .brand-mark{background:#f3b7a1;color:#352238;transform:rotate(-7deg);font-size:26px}
+#box.arcade-box .hub-search{background-color:#2b222f!important}
+#box.arcade-box .shelf-category[aria-expanded=true] b{color:#ffd4bd!important}
+#box.arcade-box .shelf-category[aria-expanded=true] small{background:#694251;color:#ffe0cd!important}
+#box.arcade-box .arcade-tile.alt:hover{background:#392b3e!important;border-color:#c38d9f!important}
+#box .game-symbol{background:#4d364b!important;color:#f6c7b0!important}
+#box .cat-scene{background:radial-gradient(ellipse at 65% 30%,#8d637e,#533c61 60%,#382d46);display:grid!important;place-items:center;isolation:isolate;overflow:hidden}
+#box .cat-scene.cat-scene-1{background:radial-gradient(ellipse at 65% 30%,#8c8072,#5c5b69 60%,#353748)}
+#box .cat-scene.cat-scene-2{background:radial-gradient(ellipse at 65% 30%,#ba8990,#795472 60%,#4f354d)}
+#box .cat-scene.cat-scene-3{background:radial-gradient(ellipse at 65% 30%,#7d8991,#4c596f 60%,#303548)}
+#box .cat-scene:before{content:'🐾';position:absolute;right:-12px;top:0;font-size:100px;opacity:.1;transform:rotate(-25deg);z-index:-1}
+#box .cat-scene:after{content:'✧';position:absolute;left:15%;top:13%;font-size:28px;color:#ffe2c1aa;z-index:-1}
+#box .cat-scene .scene-cat{font-size:clamp(64px,7vw,100px);line-height:1.2;filter:drop-shadow(0 14px 12px #20142155);transform:rotate(-7deg);transition:transform .3s}
+#box .cat-scene .scene-prop{position:absolute;bottom:12%;right:12%;font-size:28px;transform:rotate(12deg);filter:drop-shadow(0 3px 5px #0003)}
+#box .arcade-tile:hover .scene-cat{transform:rotate(2deg) translateY(-4px)}
+#box.arcade-box:is([data-view=shelves],[data-view=grid]) .featured-collection .illustrated:first-child .cat-scene{display:grid!important;place-items:center end;padding-right:9%;background:radial-gradient(ellipse at 70% 30%,#a47a91,#665079 50%,#3b2c4a)}
+#box .featured-collection .illustrated:first-child .scene-cat{font-size:185px;transform:rotate(-8deg) translateY(-30px)}
+#box .featured-collection .illustrated:first-child .scene-prop{font-size:58px;bottom:24%;right:9%}
+#box.arcade-box:is([data-view=shelves],[data-view=grid]) .featured-collection .illustrated:first-child:after{background:linear-gradient(0deg,#2e1e3af2,transparent 90%),linear-gradient(90deg,#281d3eaa,transparent 85%)}
+#box.arcade-box:is([data-view=shelves],[data-view=grid]) .featured-collection .illustrated:first-child .game-play{background:#f3b7a1;color:#382436}
+#box .game-play{color:#f5c3ac!important}
+#box .featured-collection .illustrated:first-child .game-play{color:#382436!important}
+#box .game-play span{background:#503b52}
+#box .hub-tools button.alt{color:#c4aabe}
+#box .hub-tools button:hover{background:#3b2c42;color:#ffe0cd}
+.page-theme-control,#rpg-bg{display:none!important}
+#g2.dungeon-scene:before{display:none!important}
+#g2b{position:relative;isolation:isolate;flex:1}
+#g2b:before{content:'🐾';position:fixed;right:3vw;bottom:3vh;font-size:120px;opacity:.035;pointer-events:none;z-index:-1;transform:rotate(-20deg)}
+.cat-card-stamp{position:absolute;right:4px;bottom:5px;font-style:normal!important;font-size:11px!important;line-height:1;opacity:.35;pointer-events:none;z-index:2}
+.card .b{background:radial-gradient(ellipse,#775878,#493453)!important;border:3px solid #fff0e0!important;display:grid;place-items:center;overflow:hidden}
+.card .b:after{content:none}
+#g2.solitaire-deck .card .deck-court{background:linear-gradient(#edd4cc,#dab7ce);border-color:#b88c9d;inset:18% 26%;display:grid;place-items:center}
+#g2.solitaire-deck .deck-court .cat-court{position:static!important;font-size:calc(var(--cw) * .39)!important;line-height:1}
+#g2.solitaire-deck .cat-card-stamp{right:24%;bottom:4px;font-size:9px!important}
+#magic .card .f:after{content:'🐾';position:absolute;right:3px;bottom:3px;font-size:9px;opacity:.3;pointer-events:none}
+:is(.check-board,.chess-board,.mancala-board,.bg-board,.classic-device){border-color:#b18a95!important}
+:is(.sol-status,.board-status,.classic-status){color:#f7d9c9}
+@media(max-width:600px){#box .featured-collection .illustrated:first-child .scene-cat{font-size:145px}#box .cat-scene .scene-cat{font-size:65px}#g2h:before{margin-right:4px}}
+
+.checker{position:relative}.checker:after{content:'🐾';position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(12px,2vw,22px);opacity:.65;pointer-events:none}.checker:not(:empty):after{font-size:10px;inset:auto 0 1px;opacity:.6}.check-square.dark{background:#65445f!important}.check-square.light{background:#d4b6c0!important}

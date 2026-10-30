@@ -1,0 +1,8 @@
+.hub-gear{display:inline-grid;place-items:center;min-width:40px;min-height:40px;padding:0;font-size:20px;line-height:1}
+.hub-settings{flex-basis:100%;max-height:min(50dvh,420px);overflow:auto;border:1px solid #bba36c66;border-radius:10px;background:#0b2a20;padding:6px 16px 14px;text-align:left}
+.hub-settings[hidden]{display:none}
+.hub-settings-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding-top:8px}
+.hub-settings .hub-label{margin:16px 0 8px}
+.hub-check-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:2px 16px}
+.hub-check{display:flex;align-items:center;gap:8px;font-size:14px;color:#fff1d5;padding:4px 0;cursor:pointer}
+.hub-check input{accent-color:#ffc94a;width:16px;height:16px;margin:0}

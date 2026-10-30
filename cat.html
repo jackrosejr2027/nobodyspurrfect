@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Nobody's Purrfect1</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="stylesheet" href="intro.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="arcade.css">
+<link rel="stylesheet" href="expansion.css">
+<link rel="stylesheet" href="boards.css">
+<link rel="stylesheet" href="more-boards.css">
+<link rel="stylesheet" href="carousel.css">
+<link rel="stylesheet" href="arcade-views.css">
+<link rel="stylesheet" href="readability.css">
+<link rel="stylesheet" href="solo.css">
+<link rel="stylesheet" href="world-puzzles.css">
+<link rel="stylesheet" href="mahjong.css">
+<link rel="stylesheet" href="interface.css">
+<link rel="stylesheet" href="chess.css">
+<link rel="stylesheet" href="jewels.css">
+<link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="cabinet.css">
+<link rel="stylesheet" href="classic.css">
+<link rel="stylesheet" href="page-themes.css">
+<link rel="stylesheet" href="mobile.css">
+<link rel="stylesheet" href="room.css">
+<link rel="stylesheet" href="solitaire-deck.css">
+  <link rel="stylesheet" href="picture-cards.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#201923">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="cat-theme.css">
+<link rel="stylesheet" href="randos/randos.css">
+  <link rel="stylesheet" href="cat-motion.css">
+  <link rel="stylesheet" href="online.css">
+  <link rel="stylesheet" href="frame.css">
+  <link rel="stylesheet" href="hub-settings.css">
+  <link rel="stylesheet" href="card-zoom.css">
+  <link rel="stylesheet" href="fonts.css">
+<script src="js/theme.js"></script>
+<link rel="stylesheet" href="light-theme.css">
+</head><body>
+<div id="top"><h2 style="color:var(--gold)">🐱 Nobody's Purrfect1</h2><div><span class="chip" id="hl"></span><button class="alt" id="mute" style="padding:4px 10px">🔊</button><button class="alt" id="hm" style="padding:4px 12px">Menu</button></div></div>
+<div id="board">
+<div id="scores"><div>You <b id="sp">0</b></div><div id="cmb"></div><div>Dealer <b id="sd">0</b></div></div>
+<div id="goal"></div><div id="stacks"></div>
+<div id="hud"><div id="deck"></div><div id="cur"></div><div id="reserve"></div><div id="pw"></div></div></div>
+<div id="modal"><div id="box"></div></div><div id="toast"></div><div id="magic"><div id="mtop"><h2 style="color:var(--gold)">🐈 Cat Tricks</h2><span id="mver" style="font-size:13px"></span><button class="alt" id="mq">? How to play</button><button class="alt" id="mx">Close</button></div><div id="mlist"></div><div id="mplay"><div id="menv"></div><div id="mmsg"></div><div id="mcols"></div><div id="mact" class="row"></div></div></div>
+<div id="g2"><div id="g2t"><h2 id="g2h" style="color:var(--gold)"></h2><span><button class="alt" id="g2q" title="How to play this game">? How to play</button> <button class="alt" id="g2s" title="Back to the games list">Games</button> <button class="alt" id="g2x" title="Close">Close</button></span></div><div id="g2b"></div></div>
+<canvas id="fx"></canvas>
+
+<div id="pg-about" class="page" hidden><div class="pbody">
+<div class="pbar"><h2>About</h2><button class="alt" data-close>Back to game</button></div>
+<p class="ver">Nobody's Purrfect1 1.0 Final · 25 Oct 2026</p>
+<p>A cozy cat arcade with solitaire, board games, puzzles and solo adventures. All games share a whiskered look, with familiar rules and saved progress.</p>
+<h3>Credits</h3>
+<ul>
+<li>The Long Road is after Ashley’s solo card RPG at roboheartbeat.com.</li>
+<li>The Quiet Year-style Journal, Savage Worlds-style Skirmish and Castle Falkenstein-style Challenges are unofficial, unaffiliated games inspired by The Quiet Year, Savage Worlds and Castle Falkenstein. They are not made, endorsed or supported by the publishers of those games.</li>
+</ul>
+</div></div>
+<div id="pg-notes" class="page" hidden><div class="pbody">
+<div class="pbar"><h2>Release notes</h2><button class="alt" data-close>Back to game</button></div>
+<div class="rel"><p class="ver">Nobody's Purrfect1</p><ul><li>A shared cat theme across games, menus, cards and demos.</li><li>Card Duels, Ordinary the Scattering and PullCrest have been removed.</li><li>Other games, levels and saved progress are preserved.</li></ul></div>
+</div></div>
+
+<script src="js/game.js"></script>
+<script src="js/magic.js"></script>
+<script src="js/draw-count.js"></script>
+<script src="js/extras.js"></script>
+<script src="js/solitaire.js"></script>
+<script src="js/tabletop.js"></script>
+<script src="js/local-play.js"></script>
+<script src="js/page-themes.js"></script>
+<script src="js/solitaire-more.js"></script>
+<script src="js/rpg.js"></script>
+<script src="js/magic-more.js"></script>
+<script src="js/board-rules.js"></script>
+<script src="js/board-ai.js"></script>
+<script src="js/mahjong-tiles.js"></script>
+<script src="js/board-games.js"></script>
+<script src="js/guides.js"></script>
+<script src="vendor/chess.js"></script>
+<script src="js/sudoku-data.js"></script>
+<script src="js/more-board-rules.js"></script>
+<script src="js/more-board-games.js"></script>
+<script src="js/gin-rules.js"></script>
+<script src="js/gin-game.js"></script>
+<script src="js/readability.js"></script>
+<script src="js/puzzle-rules.js"></script>
+<script src="js/solo-data.js"></script>
+<script src="js/solo-games.js"></script>
+<script src="js/world-puzzle-rules.js"></script>
+<script src="js/world-puzzles.js"></script>
+<script src="js/solitaire-motion.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/jewels.js"></script>
+<script src="js/classic-rules.js"></script>
+<script src="js/classic-levels.js"></script>
+<script src="js/classic-games.js"></script>
+<script src="js/card-design.js"></script>
+<script src="js/cat-theme.js"></script>
+<script src="js/network.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/game-sessions.js"></script>
+<script src="js/arcade.js"></script>
+<script src="randos/randos.js"></script>
+<script src="randos/games/snake.js"></script>
+<script src="randos/games/breakout.js"></script>
+<script src="randos/games/pong.js"></script>
+<script src="randos/games/flappy.js"></script>
+<script src="randos/games/fish.js"></script>
+<script src="randos/games/dodge.js"></script>
+<script src="randos/games/whack.js"></script>
+<script src="randos/games/memory.js"></script>
+<script src="randos/games/lights.js"></script>
+<script src="randos/games/slide.js"></script>
+<script src="randos/games/tictactoe.js"></script>
+<script src="randos/games/simon.js"></script>
+<script src="randos/games/stack.js"></script>
+<script src="randos/games/reaction.js"></script>
+<script src="randos/games/colortap.js"></script>
+<script src="randos/games/bubbles.js"></script>
+<script src="randos/games/taprace.js"></script>
+<script src="randos/games/hilo.js"></script>
+<script src="randos/games/hangman.js"></script>
+<script src="randos/games/rps.js"></script>
+<script src="js/game-nav.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/click-away.js"></script>
+<script src="js/intro.js"></script>
+</body></html>

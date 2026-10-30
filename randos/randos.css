@@ -1,0 +1,21 @@
+.randos{position:fixed;inset:0;z-index:20000;display:flex;flex-direction:column;align-items:center;gap:12px;padding:14px;box-sizing:border-box;overflow:auto;color:#fffdf6;background:radial-gradient(circle at 50% 25%,#2a6b55,#0b2a21 70%);font-family:system-ui,sans-serif}
+.randos[hidden]{display:none!important}
+.randos{-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;overscroll-behavior:contain}
+.randos button{touch-action:manipulation}
+.randos-bar{width:100%;max-width:720px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.randos-title{font-weight:700;font-size:20px}
+.randos-btn{background:#fcf5e1;color:#153b2c;border:0;border-radius:999px;padding:9px 16px;font:600 15px system-ui,sans-serif;cursor:pointer}
+.randos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:12px;width:100%;max-width:720px;margin:auto;padding:12px 0}
+.randos-tile{display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 8px;border:0;border-radius:16px;background:#fffdf6;color:#153b2c;font:700 16px system-ui,sans-serif;cursor:pointer;box-shadow:0 5px 0 #8a6d4a}
+.randos-tile:active{transform:translateY(3px);box-shadow:0 2px 0 #8a6d4a}
+.randos-emoji{font-size:42px;line-height:1}
+.randos-stage{flex:1;width:100%;max-width:720px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:6px 0}
+.randos-canvas{display:block;max-width:100%;max-height:68vh;max-height:68dvh;width:auto;height:auto;border-radius:14px;background:#0e2a22;touch-action:none;box-shadow:0 6px 0 rgba(0,0,0,.25)}
+.randos-hud{font:700 18px system-ui,sans-serif;min-height:24px;text-align:center}
+.randos-board{display:grid;gap:8px;width:100%;max-width:420px}
+.randos-cell{aspect-ratio:1;border:0;border-radius:12px;background:#fffdf6;color:#153b2c;font:700 26px system-ui,sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 0 #8a6d4a;padding:0}
+.randos-cell:disabled{cursor:default}
+.randos-cell.off{background:#2b5a4b;box-shadow:none;color:transparent}
+.randos-cell.on{background:#f6c26b}
+.randos-cell.hidden{background:#1c4539;box-shadow:none;color:transparent}
+.randos-cell.blank{background:#2b5a4b;color:#fffdf6;box-shadow:none;cursor:default}

@@ -1,0 +1,8 @@
+/* Picture deck: every face and the back are bundled images from img/cards, so they work offline. */
+#g2 .card.pic .f{
+ background:var(--playing-bg,#fffef9) var(--face) center/100% 100% no-repeat!important;
+ border:0!important;border-radius:9px!important;padding:0!important;gap:0!important;
+ box-shadow:0 2px 4px #0004,0 9px 15px #07061415;overflow:hidden;color:transparent!important;text-shadow:none;
+}
+#g2 .card.pic .f>*{display:none!important}
+#g2 .card .b{background:#1e2445 url('img/cards/back.webp') center/100% 100% no-repeat!important;border-radius:9px!important}

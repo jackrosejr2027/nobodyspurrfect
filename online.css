@@ -1,0 +1,15 @@
+/* Online-only presentation. Offline mode never requests these files. */
+html[data-network=online] #box .art-photo{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(0deg,#12091ccc,#0000 58%),var(--art);background-size:cover;background-position:center;transition:transform .6s ease;pointer-events:none}
+html[data-network=online] #box .illustrated:hover .art-photo{transform:scale(1.05)}
+html[data-network=online] #box .hub-heading h2,
+html[data-network=online] #box .arcade-tile b,
+html[data-network=online] #box .hub-label,
+html[data-network=online] #box .carousel-title h2,
+html[data-network=online] #g2h{font-family:Fraunces,Georgia,serif!important;letter-spacing:-.3px}
+html[data-network=online] #g2b{background:linear-gradient(#0000 60%,#0008),url(img/online/table.webp) 0 0/640px auto repeat}
+html[data-network=online] #box .game-art{position:relative}
+html[data-network=online] #box .cat-scene .scene-cat,
+html[data-network=online] #box .featured-collection .illustrated:first-child .scene-cat{position:absolute!important;top:9px;right:9px;left:auto;bottom:auto;z-index:2;font-size:22px!important;line-height:1;transform:none!important;filter:drop-shadow(0 2px 3px #0009)}
+html[data-network=online] #box .arcade-tile:hover .scene-cat{transform:none!important}
+.network-toggle{font-size:12px;padding:5px 10px;white-space:nowrap}
+.network-toggle[aria-pressed=true]{background:#ffc94a;color:#2a1c05;border-color:#ffe39a}

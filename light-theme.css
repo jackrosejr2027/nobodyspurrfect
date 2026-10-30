@@ -1,0 +1,92 @@
+/* Cream, lavender and pink look. Scoped to html.light so dark cat mode (cat-theme.css) stays intact. */
+html.light{--room-bg:#fbf6ee;--room-panel:#fffaf3;--room-raised:#f4eefb;--room-line:#d5c4ec;--room-ink:#4a3360;--room-muted:#8a77a0;--room-accent:#c25b92;--room-soft:#eee6f8;--felt:#efe7fa;--ink:#3f2453;--gold:#7d4fb0;--cream:#4a3360;--pink:#f2a7c8;color-scheme:light}
+html.light body,html.light #g2,html.light #magic,html.light .page{background:url(img/meadow-bg.webp) center bottom/cover no-repeat fixed,#fbf6ee!important;color:#4a3360}
+html.light #top,html.light #g2t,html.light #mtop{background:#fffaf3ee!important;border-bottom:1px solid #d5c4ec!important}
+html.light #top h2,html.light #mtop h2,html.light #g2h,html.light .hub-heading h2,html.light .featured b{color:#7d4fb0!important}
+html.light #top .chip{background:#efe4fa;color:#6a4a8c}
+
+html.light button{background:linear-gradient(#fde0ef,#f2b6d6);color:#4a2c63;box-shadow:0 2px 0 #c98fbc}
+html.light button.alt{background:#fffaf3;color:#6a4a8c;border-color:#c3a9dc;box-shadow:none}
+html.light input,html.light select,html.light textarea{background-color:#fffdf8;color:#4a3360;border-color:#c3a9dc;accent-color:#c25b92}
+
+html.light #box:not(.arcade-box){background:#fffdf8!important;border-color:#c9b3e4!important;color:#4a3360}
+html.light #box.arcade-box{background:#fffdf8f2!important;border-color:#d5c4ec!important;color:#4a3360}
+html.light #box.arcade-box .hub-search{background-color:#fffdf8!important;color:#4a3360}
+html.light #box .brand-mark{background:#f2a7c8;color:#4a2c63}
+html.light .hub-label{color:#9a6bb8}
+html.light .hub-heading span{color:#8a77a0}
+html.light .hub-tools{border-top-color:#d5c4ec}
+html.light .hub-tools button.alt{color:#6a4a8c}
+html.light .hub-tools button:hover{background:#f4e6fb;color:#4a2c63}
+
+html.light .category-shelf{border-bottom-color:#d5c4ec!important}
+html.light .shelf-category{background:#fffaf3!important;border-color:#d5c4ec!important;color:#4a3360}
+html.light .shelf-category b{color:#4a2c63}
+html.light .shelf-category small{background:#efe4fa;color:#6a4a8c}
+html.light .shelf-category[aria-expanded=true]{background:linear-gradient(100deg,#fde3f0,#ebdcfb)!important;border-color:#e3a0c8!important}
+html.light #box.arcade-box .shelf-category[aria-expanded=true] b{color:#7d4fb0!important}
+html.light #box.arcade-box .shelf-category[aria-expanded=true] small{background:#f4c6dd;color:#6a2f5a!important}
+
+html.light .arcade-tile{background:#fffaf3!important;border-color:#d5c4ec!important;color:#4a3360}
+html.light .arcade-tile b{color:#4a2c63}
+html.light .arcade-tile small{color:#6d5a80}
+html.light #box.arcade-box .arcade-tile.alt:hover{background:#fbf0f8!important;border-color:#e08fbd!important}
+html.light .featured .arcade-tile{border-color:#e08fbd!important;background:linear-gradient(125deg,#fde4f0,#e9dcfa)!important}
+html.light #box .game-play{color:#9a4f83!important}
+html.light #box .game-play span{background:#efe4fa;color:#6a4a8c}
+html.light #box .game-symbol{background:#f4e6fb!important;color:#7d4fb0!important}
+html.light #box .cat-scene,
+html.light #box .cat-scene.cat-scene-1,
+html.light #box .cat-scene.cat-scene-2,
+html.light #box .cat-scene.cat-scene-3{background:radial-gradient(ellipse at 65% 30%,#fff3f9,#eadcfb 60%,#d9c6f2)!important}
+html.light #box.arcade-box:is([data-view=shelves],[data-view=grid]) .featured-collection .illustrated:first-child .cat-scene{background:radial-gradient(ellipse at 70% 30%,#fff3f9,#e6d5f8 55%,#cdb3ee)!important}
+html.light #box.arcade-box:is([data-view=shelves],[data-view=grid]) .featured-collection .illustrated:first-child:after{background:linear-gradient(0deg,#fffaf3f2,transparent 90%),linear-gradient(90deg,#fffaf3aa,transparent 85%)!important}
+html.light #box.arcade-box:is([data-view=shelves],[data-view=grid]) .featured-collection .illustrated:first-child .game-play{background:#f2a7c8;color:#4a2c63}
+html.light #box .cat-scene:before{color:#7d4fb0}
+
+html.light .hub-settings{background:#fffaf3;border-color:#c9b3e4}
+html.light .hub-check{color:#4a3360}
+html.light .hub-check input{accent-color:#c25b92}
+
+html.light .sol-status,html.light .board-status,html.light .classic-status{color:#6a4a8c}
+html.light #g2:has(.solitaire-host) .sol-card:focus-visible{outline-color:#c25b92}
+html.light .sol-card.chosen .f{box-shadow:0 0 0 3px #c25b92,0 0 14px #f2a7c899}
+html.light .sol-gap{border-color:#b9a0d6aa}
+html.light :is(.check-board,.chess-board,.mancala-board,.bg-board,.classic-device){border-color:#c9a8dc!important}
+html.light .check-square.dark{background:#c9a8dc!important}
+html.light .check-square.light{background:#fdf3fa!important}
+html.light #g2b:before{opacity:.05}
+
+/* Hub views and carousel: the views set their own colours with ids, so these win on specificity. */
+html.light #box.arcade-box,html.light #box.carousel-box,html.light #box[data-view]{background:transparent!important;border-color:transparent!important;color:#4a3360!important;box-shadow:none!important}
+html.light #box[data-view] .arcade-tile{background:#fffaf3f0!important;border:1px solid #d5c4ec!important;border-radius:14px!important;box-shadow:0 3px 0 #dccdf0!important;color:#4a3360!important;transform:none!important;background-image:none!important}
+html.light #box[data-view] .arcade-tile:hover{border-color:#e08fbd!important;background:#fff0f7!important}
+html.light #box[data-view] .arcade-tile b{color:#4a2c63!important}
+html.light #box[data-view] .arcade-tile small{color:#6d5a80!important;opacity:1!important}
+html.light #box[data-view] .hub-label{color:#9a6bb8!important}
+html.light #box[data-view] .hub-heading h2,html.light #top h2{color:#7d4fb0!important;-webkit-text-fill-color:#7d4fb0!important;opacity:1!important}
+html.light #box[data-view] .hub-heading span{color:#8a77a0!important}
+html.light #box[data-view] .hub-tools{border-color:#d5c4ec!important}
+html.light #box[data-view] .shelf-category{background:#fffaf3!important;border-color:#d5c4ec!important;color:#4a3360!important}
+html.light #box .featured .arcade-tile{background:linear-gradient(125deg,#fde4f0,#e9dcfa)!important;border-color:#e08fbd!important}
+html.light #box .featured b{color:#7d4fb0!important}
+html.light #box .featured small{color:#6d5a80!important}
+html.light .hub-gear{background:#fde0ef!important;color:#7d4fb0!important;border-color:#d5c4ec!important;box-shadow:0 2px 0 #c98fbc!important}
+html.light .carousel-stage,html.light .demo-viewport{background:#efe7fa!important;border-color:#d5c4ec!important}
+html.light .carousel-info{background:#fffaf3f5!important;color:#4a3360!important;border-color:#d5c4ec!important}
+html.light .carousel-info h3{color:#7d4fb0!important}
+html.light .carousel-description{color:#4a3360!important}
+html.light .carousel-title h2{color:#4a2c63!important}
+html.light .carousel-title small{color:#9a6bb8!important}
+html.light .carousel-title>span{color:#6a4a8c!important}
+html.light .carousel-preview-label{color:#7d4fb0!important;background:#fffaf3e6!important}
+html.light .carousel-details-toggle{background:#fffaf3!important;color:#6a4a8c!important}
+
+/* Readability pass: game chrome and hub labels on the cream light background */
+html.light :is(#top,#g2t,#mtop,.hub-tools,#box) button.alt{color:#5a3d7a!important;background:#fffaf3!important;border-color:#cdb8e0!important;-webkit-text-fill-color:#5a3d7a!important}
+html.light :is(#g2h,#mtop h2,#top h2){color:#3f2453!important;-webkit-text-fill-color:#3f2453!important}
+html.light :is(#g2,#magic,#mtop) :is(.mlab,.sol-cell small,.mb-difficulty){color:#5a3d7a!important;opacity:1!important}
+html.light #box .collection-count{color:#6d5a80!important}
+html.light #box b{color:#4a2c63}
+html.light .shelf-category b,html.light #box .shelf-category b{color:#4a2c63!important}
+html.light .hub-label,html.light #box[data-view] .hub-label{color:#7d4fb0!important}

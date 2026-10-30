@@ -1,0 +1,2 @@
+/* In-game card games render at 1.5x so the whole table fits on screen. */
+#g2b:has(.card),#magic #mplay:has(.card){zoom:1.5}
